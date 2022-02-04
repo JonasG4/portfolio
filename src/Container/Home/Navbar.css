@@ -1,0 +1,7 @@
+.bg-mblue{
+    background: var(--mate-blue);
+}
+
+.active{
+    color: var(--mate-green) !important;
+}
