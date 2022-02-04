@@ -13,7 +13,7 @@ export default function Profile() {
       typeSpeed: 200,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Web", "Full Stack", "MERN"],
+      strings: ["Web", "Full Stack", "MERN", "Mobile"],
     });
   }, []);
 
@@ -21,7 +21,7 @@ export default function Profile() {
     <div>
       <Navbar />
       <div className="container-fluid d-flex flex-lg-column w-100 justify-content-center align-items-center profile-container" id="inicio">
-        <div className="profile-parent d-flex flex-lg-row justify-content-center align-items-center w-100 gap-lg-5 flex-sm-column-reverse">
+        <div className="profile-parent d-flex flex-lg-row justify-content-center align-items-center w-100 gap-lg-5 gap-md-3 mt-md-5 flex-sm-column-reverse">
           <div className="profile-details">
             <div className="d-flex gap-4  justify-content-center align-items-center">
               <a href="https://www.facebook.com/jonas.garcia711/">
@@ -76,7 +76,7 @@ export default function Profile() {
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2138" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,186.7C384,192,480,160,576,128C672,96,768,64,864,80C960,96,1056,160,1152,192C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-      <div id="sobreMi" className="container-fluid w-100 d-flex justify-content-center align-items-center aboutMe-Container">
+      <div id="sobreMi" className="container-fluid w-100 d-flex flex-column justify-content-center align-items-center aboutMe-Container">
         <section className="heading-container d-flex justify-content-center align-items-center flex-column w-100">
           <h2 className="heading-title text-dblue fw-bold">Sobre mí</h2>
           <h5 className="heading-subtitle fw-light">¿Por qué elegirme?</h5>
@@ -87,17 +87,43 @@ export default function Profile() {
             </div>
           </div>
         </section>
-
         <div className="aboutMe-parent d-flex flex-row">
-
-
-          <div className="aboutMe-left">
-            <img src="" alt="" />
+          <div className="card mb-3 card-aboutMe">
+            <div className="row g-0">
+              <div className="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="img/bio.jpg" className="img-fluid rounded-start" alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body px-5 pt-4">
+                  <p className="card-text text-justify">
+                   Soy un desarrollador web full stack que vive en San Miguel, El Salvador. Actualmente curso el 5to año de la carrera de Ingenieria en Desarrollo Software en la Universidad de Oriente (UNIVO). 
+                   Desarrollo aplicaciones web combinando la logia y el diseño para ofrecer un producto con interfaz amigable, accesible y escalable siguendo las mejores practicas de programacion. 
+                  <br /><br />
+                   Me encanta enfrentarme a nuevos retos, es increible que se puedan encontrar tantas formas diferentes de resolver un solo problema y que cada respuesta sea mas mejor que la anterior. Disfruto mucho resolviendo algoritmos
+                   complejos que desafian mucho mi logica.
+                  </p>
+                  <p className="card-text">
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="aboutMe-right">
 
-          </div>
         </div>
+      </div>
+
+      <div id="portfolio" className="portfolio-container container-fluid">
+      <section className="heading-container d-flex justify-content-center align-items-center flex-column w-100">
+          <h2 className="heading-title text-dblue fw-bold">Portafolio</h2>
+          <h5 className="heading-subtitle fw-light">Detalles de mi biografia formal</h5>
+          <div className="heading-separator">
+            <div className="separator-line"></div>
+            <div className="separator-blob">
+              <div className="blob-shape"></div>
+            </div>
+          </div>
+        </section>
       </div>
 
     </div>

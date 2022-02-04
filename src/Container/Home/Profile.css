@@ -99,6 +99,16 @@ body{
     background-color:var(--mate-green)
 }
 
+.card-aboutMe{
+    max-width: 1000px;
+    height: 700px;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+}
+
+.text-justify{
+    text-align: justify;
+}
+
 @keyframes blink {
     50%{
         opacity: 1;
@@ -110,4 +120,26 @@ body{
 
 .ityped-cursor{
     animation: blink 1s infinite;
+}
+
+
+@media screen and (max-width:991px) {
+    .profile-picture {
+        width: 230px;
+        height: 230px;
+    }
+    
+    .img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .img:hover{
+        transform: scale(1.07);
+        transition: 1s ease-out;
+    }
+
+
 }
