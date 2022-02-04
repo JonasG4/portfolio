@@ -20,7 +20,7 @@ export default function Profile() {
   return (
     <div>
       <Navbar />
-      <div className="container-fluid d-flex flex-lg-column w-100 justify-content-center align-items-center profile-container" id="home">
+      <div className="container-fluid d-flex flex-lg-column w-100 justify-content-center align-items-center profile-container" id="inicio">
         <div className="profile-parent d-flex flex-lg-row justify-content-center align-items-center w-100 gap-lg-5 flex-sm-column-reverse">
           <div className="profile-details">
             <div className="d-flex gap-4  justify-content-center align-items-center">
@@ -76,29 +76,31 @@ export default function Profile() {
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2138" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,186.7C384,192,480,160,576,128C672,96,768,64,864,80C960,96,1056,160,1152,192C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-      <div id="sobreMi" className="container-fluid w-100 d-flex justify-content-center align-items-center aboutMe-Container"> 
-          <div className="aboutMe-parent d-flex flex-row">
-            <section className="heading-container d-flex justify-content-center align-items-center flex-column"> 
-                <h2 className="heading-title text-dblue fw-bold">Sobre mí</h2>
-                <h5 className="heading-subtitle fw-light">¿Por qué elegirme?</h5>
-                <div className="heading-separator">
-                  <div className="separator-line"></div>
-                  <div className="separator-blob">
-                    <div></div>
-                  </div>
-                </div>
-            </section>
-
-            <div className="aboutMe-left">
-              <img src="" alt="" />  
-            </div>            
-            <div className="aboutMe-right">
-              
-          </div>            
+      <div id="sobreMi" className="container-fluid w-100 d-flex justify-content-center align-items-center aboutMe-Container">
+        <section className="heading-container d-flex justify-content-center align-items-center flex-column w-100">
+          <h2 className="heading-title text-dblue fw-bold">Sobre mí</h2>
+          <h5 className="heading-subtitle fw-light">¿Por qué elegirme?</h5>
+          <div className="heading-separator">
+            <div className="separator-line"></div>
+            <div className="separator-blob">
+              <div className="blob-shape"></div>
+            </div>
           </div>
+        </section>
+
+        <div className="aboutMe-parent d-flex flex-row">
+
+
+          <div className="aboutMe-left">
+            <img src="" alt="" />
+          </div>
+          <div className="aboutMe-right">
+
+          </div>
+        </div>
       </div>
 
     </div>
 
-);
+  );
 }
