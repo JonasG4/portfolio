@@ -122,25 +122,131 @@ export default function Profile() {
             </div>
           </div>
         </section>
-        <div className="d-flex align-items-start">
-          <div className="container-fluid d-flex justify-content-center">
-            <div className="nav flex-column nav-pills me-3 bg-dblue p-3 rounded-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div className="d-flex align-align-items-center">
+          <div className="container-fluid d-flex justify-content-center portfolio-body">
+            <div className="nav flex-column nav-pills me-3 bg-dblue p-3 rounded-3 align-items-center h-100 justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <button className="nav-link btn-link active" id="v-pills-skills-tab" data-bs-toggle="pill" data-bs-target="#v-pills-skills" type="button" role="tab" aria-controls="v-pills-skills" aria-selected="true">Habilidades</button>
               <button className="nav-link btn-link" id="v-pills-proyects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-proyects" type="button" role="tab" aria-controls="v-pills-proyects" aria-selected="false">Proyectos</button>
             </div>
             <div className="tab-content bg-light w-50 p-4 rounded-3" id="v-pills-tabContent">
-              <div className="tab-pane fade show active " id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">
-                <div className="row">
+              <div className="tab-pane fade show active" id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">
+                <div className="row mb-3">
                   <div className="col">
-                    <h3>ReactJs</h3>
-                    <div class="progress">
-                      <div class="progress-bar w-25" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-react text-primary"></i>
+                      </span>
+                      React Js
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-react" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                   <div className="col">
-                    <h3>NodeJs</h3>
-                    <div class="progress">
-                      <div class="progress-bar w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-node-js text-primary"></i>
+                      </span>
+                      Node Js
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mb-3">
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-java text-primary"></i>
+                      </span>
+                      Java
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fas fa-hashtag text-primary"></i>
+                      </span>
+                      C Sharp
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-50" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mb-3">
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-python text-primary"></i>
+                      </span>
+                      Python
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-react" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-php text-primary"></i>
+                      </span>
+                      PHP
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mb-3">
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-html5 text-primary"></i>
+                      </span>
+                      HTML
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-100" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fab fa-css3-alt text-primary"></i>
+                      </span>
+                      CSS
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mb-3">
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fas fa-database text-primary"></i>
+                      </span>
+                      PostgreSQL
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-react" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <h5 className="text-dblue">
+                      <span className="px-lg-2">
+                        <i className="fas fa-database text-primary"></i>
+                      </span>
+                      Mongo DB
+                    </h5>
+                    <div className="progress">
+                      <div className="progress-bar bg-mgreen w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -148,21 +254,22 @@ export default function Profile() {
               <div className="tab-pane fade" id="v-pills-proyects" role="tabpanel" aria-labelledby="v-pills-proyects-tab">
                 <div className="row">
                   <div class="card col">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="img/ohara.png" className="card-img-top" alt="..." />  
+                    <div className="card-body">
+                    <h5 className="card-title h6">Sistema bibliotecario OHARA</h5>
+                      <p className="card-text">.</p>
                     </div>
                   </div>
                   <div class="card col">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
-                  <div class="card col">
+                  <div className="card col">
                     <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div className="card-body">
+                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
                 </div>

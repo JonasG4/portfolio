@@ -47,9 +47,15 @@ body{
     background-color: var(--mate-green) !important;
 }
 
+.bg-dgray{ background-color: var(--dark-gray);}
+
 .btn-mgreen{
     background-color: var(--mate-green);
     color: #ffffff;    
+}
+
+.w-react{
+    width: 90%;
 }
 
 .btn-outline-mgreen{
@@ -132,6 +138,10 @@ button.active{
 .portfolio-container{
     background: var(--dark-blue);
     min-height: 800px;
+}
+
+.portfolio-body{
+    height: 400px;
 }
 
 @keyframes blink {
