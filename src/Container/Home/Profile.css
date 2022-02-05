@@ -41,6 +41,12 @@ body{
     color: var(--dark-blue);
 }
 
+.bg-dblue{ background-color: var(--dark-blue);}
+
+.bg-mgreen{
+    background-color: var(--mate-green) !important;
+}
+
 .btn-mgreen{
     background-color: var(--mate-green);
     color: #ffffff;    
@@ -99,6 +105,20 @@ body{
     background-color:var(--mate-green)
 }
 
+button.active{
+    background-color: var(--mate-green) !important;
+}
+
+.btn-link{
+    color: #f1f1f1;
+}
+
+.btn-link:hover{
+    color: #fff;
+    background: rgba(255,255,255,.02);
+    transform: scale(1.02)
+}
+
 .card-aboutMe{
     max-width: 1000px;
     height: 700px;
@@ -107,6 +127,11 @@ body{
 
 .text-justify{
     text-align: justify;
+}
+
+.portfolio-container{
+    background: var(--dark-blue);
+    min-height: 800px;
 }
 
 @keyframes blink {

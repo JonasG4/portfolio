@@ -16,7 +16,7 @@ export default function Navbar() {
             title: "Sobre mi"
         },
         {
-            id: "portafolio",
+            id: "portfolio",
             title: "Portafolio"
         },
         {
@@ -27,7 +27,7 @@ export default function Navbar() {
 
     return (
     <div>
-        <ul className="nav justify-content-end bg-mblue py-3 fw-bold active px-5">
+        <ul className="nav justify-content-end bg-mblue py-3 fw-bold px-5">
             {list.map((item) => (
                 <NavList
                     title={item.title}

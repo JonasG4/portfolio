@@ -76,7 +76,7 @@ export default function Profile() {
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2138" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,186.7C384,192,480,160,576,128C672,96,768,64,864,80C960,96,1056,160,1152,192C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-      <div id="sobreMi" className="container-fluid w-100 d-flex flex-column justify-content-center align-items-center aboutMe-Container">
+      <div id="sobreMi" className="container-fluid w-100 d-flex flex-column justify-content-center align-items-center aboutMe-Container mb-5">
         <section className="heading-container d-flex justify-content-center align-items-center flex-column w-100">
           <h2 className="heading-title text-dblue fw-bold">Sobre mí</h2>
           <h5 className="heading-subtitle fw-light">¿Por qué elegirme?</h5>
@@ -96,34 +96,81 @@ export default function Profile() {
               <div className="col-md-8">
                 <div className="card-body px-5 pt-4">
                   <p className="card-text text-justify">
-                   Soy un desarrollador web full stack que vive en San Miguel, El Salvador. Actualmente curso el 5to año de la carrera de Ingenieria en Desarrollo Software en la Universidad de Oriente (UNIVO). 
-                   Desarrollo aplicaciones web combinando la logia y el diseño para ofrecer un producto con interfaz amigable, accesible y escalable siguendo las mejores practicas de programacion. 
-                  <br /><br />
-                   Me encanta enfrentarme a nuevos retos, es increible que se puedan encontrar tantas formas diferentes de resolver un solo problema y que cada respuesta sea mas mejor que la anterior. Disfruto mucho resolviendo algoritmos
-                   complejos que desafian mucho mi logica.
+                    Soy un desarrollador web full stack que vive en San Miguel, El Salvador. Actualmente curso el 5to año de la carrera de Ingenieria en Desarrollo Software en la Universidad de Oriente (UNIVO).
+                    Desarrollo aplicaciones web combinando la logica y el diseño para ofrecer un producto con interfaz amigable, accesible y escalable siguendo las mejores practicas de programacion.
+                    <br /><br />
+                    Me encanta enfrentarme a nuevos retos, es increible que se puedan encontrar tantas formas diferentes de resolver un solo problema y que cada respuesta sea mas mejor que la anterior. Disfruto mucho resolviendo algoritmos
+                    complejos que desafian mucho mi logica.
                   </p>
                   <p className="card-text">
-                    
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
-      <div id="portfolio" className="portfolio-container container-fluid">
-      <section className="heading-container d-flex justify-content-center align-items-center flex-column w-100">
-          <h2 className="heading-title text-dblue fw-bold">Portafolio</h2>
-          <h5 className="heading-subtitle fw-light">Detalles de mi biografia formal</h5>
+      <div id="portfolio" className="portfolio-container container-fluid py-5 bg-mblue">
+        <section className="heading-container d-flex justify-content-center align-items-center flex-column w-100">
+          <h2 className="heading-title text-light fw-bold">Portafolio</h2>
+          <h5 className="heading-subtitle fw-light text-light">Mi biografia formal</h5>
           <div className="heading-separator">
-            <div className="separator-line"></div>
+            <div className="separator-line bg-light"></div>
             <div className="separator-blob">
-              <div className="blob-shape"></div>
+              <div className="blob-shape bg-mgreen"></div>
             </div>
           </div>
         </section>
+        <div className="d-flex align-items-start">
+          <div className="container-fluid d-flex justify-content-center">
+            <div className="nav flex-column nav-pills me-3 bg-dblue p-3 rounded-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button className="nav-link btn-link active" id="v-pills-skills-tab" data-bs-toggle="pill" data-bs-target="#v-pills-skills" type="button" role="tab" aria-controls="v-pills-skills" aria-selected="true">Habilidades</button>
+              <button className="nav-link btn-link" id="v-pills-proyects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-proyects" type="button" role="tab" aria-controls="v-pills-proyects" aria-selected="false">Proyectos</button>
+            </div>
+            <div className="tab-content bg-light w-50 p-4 rounded-3" id="v-pills-tabContent">
+              <div className="tab-pane fade show active " id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">
+                <div className="row">
+                  <div className="col">
+                    <h3>ReactJs</h3>
+                    <div class="progress">
+                      <div class="progress-bar w-25" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <h3>NodeJs</h3>
+                    <div class="progress">
+                      <div class="progress-bar w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="tab-pane fade" id="v-pills-proyects" role="tabpanel" aria-labelledby="v-pills-proyects-tab">
+                <div className="row">
+                  <div class="card col">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card col">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card col">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
