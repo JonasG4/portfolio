@@ -127,8 +127,7 @@ button.active{
 
 .card-aboutMe{
     max-width: 1000px;
-    height: 700px;
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
 }
 
 .text-justify{
@@ -141,7 +140,11 @@ button.active{
 }
 
 .portfolio-body{
-    height: 400px;
+    height: 450px;
+}
+
+.card-img-h{
+    height: 35%;
 }
 
 @keyframes blink {
@@ -176,5 +179,8 @@ button.active{
         transition: 1s ease-out;
     }
 
+    .portfolio-body{
+        height: auto;
+    }
 
 }
